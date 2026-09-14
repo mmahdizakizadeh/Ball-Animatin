@@ -1,0 +1,79 @@
+body {
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+.wrap {
+  bottom: 100px;
+  margin-left: -50px;
+  position: absolute;
+  width: 100px;
+}
+.red {
+  left: 25%;
+}
+
+.green {
+  left: 50%;
+}
+
+.blue {
+  left: 75%;
+}
+
+.ball,
+.shadow {
+  border-radius: 100%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.ball {
+  animation: ball 300ms cubic-bezier(0.165, 0.84, 0.44, 1) infinite alternate;
+  width: 50px;
+  height: 50px;
+}
+
+.red .ball {
+  background-color: rgb(233, 62, 62);
+  animation-delay: -200ms;
+}
+.green .ball {
+  background-color: rgb(26, 117, 26);
+  animation-delay: -100ms;
+}
+.blue .ball {
+  background-color: rgb(55, 55, 146);
+  animation-delay: 0;
+}
+
+.shadow {
+  background-color: #000;
+  bottom: -90px;
+  height: 25px;
+  width: 75px;
+  animation: shadow 300ms cubic-bezier(0.165, 0.84, 0.44, 1) infinite alternate;
+}
+
+@keyframes ball {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-150px);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 0.05;
+    transform: scale(1);
+  }
+}
