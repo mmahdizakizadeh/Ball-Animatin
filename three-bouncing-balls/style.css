@@ -9,6 +9,7 @@ body {
   position: absolute;
   width: 100px;
 }
+
 .red {
   left: 25%;
 }
@@ -41,10 +42,11 @@ body {
   background-color: rgb(233, 62, 62);
   animation-delay: -200ms;
 }
+
 .green .ball {
   background-color: rgb(26, 117, 26);
   animation-delay: -100ms;
-}
+
 .blue .ball {
   background-color: rgb(55, 55, 146);
   animation-delay: 0;
